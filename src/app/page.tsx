@@ -1,101 +1,171 @@
-import Image from "next/image";
+import Hero from '../components/Hero';
+import React from 'react';
+import Image from 'next/image';
 
-export default function Home() {
+const page = () => {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <div className='flex flex-col'>
+        <Hero/>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+        <div className='flex flex-col items-center h-[400px]'>
+            <h1 className='text-[28px] font-extrabold text-sky-800 text-center w-[full] mt-[65px] pl-10 pr-10'>Certified Cloud Applied Generative AI Engineer (GenEng) and Solopreneur Developing Billion-Dollar Valued Developers and Solopreneurs</h1>
+
+            <p className='text-[1.25rem] text-justify mt-[35px] w-[full] pl-24 pr-24'>
+            The pace of technological change is accelerating, big players like Microsoft, Amazon, Google, and OpenAI are winning by providing infrastructure, large AI foundation models, frameworks, 3D Metaverse experiences, and massive distribution networks. Solopreneurs trained in this program will win by automating work typically outsourced to employees, by directly connecting to customers by eliminating the middleman, and by developing vertical metaverses, thus paving the way for the first billion-dollar valued solopreneur businesses. This program has the objective to train this new breed of billion-dollar solopreneurs. These solopreneurs will adopt the ultra-lean business model and work independently and will not need to hire employees or other team members.
+            </p>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+
+        <div className='flex justify-center gap-4 mt-9 mb-9'>
+            <Image className='rounded-xl'
+            src="/firstimg.jpg"
+            alt="first image"
+            height={350}
+            width={350}
+            />
+            <Image className='rounded-xl'
+            src="/secondimg.jpg"
+            alt="first image"
+            height={350}
+            width={350}
+            />
+            <Image className='rounded-xl'
+            src="/thirdimg.jpg"
+            alt="first image"
+            height={350}
+            width={350}
+            />
+        </div>
+
+        <div className='flex justify-center gap-2 h-[580px] mt-9 mb-5'>
+        <Image className='rounded-xl'
+            src="/slider3.jpg"
+            alt="first image"
+            height={600}
+            width={535}
+            />
+            <Image className='rounded-xl'
+            src="/slider5.jpg"
+            alt="first image"
+            height={600}
+            width={535}
+            />
+        </div>
+
+        <div className='flex flex-row gap-3 justify-center items-center w-full h-5 mt-9 mb-6'>
+            <div className='w-20 h-1 bg-gray-800'></div>
+            <div className='w-20 h-1 bg-gray-300'></div>
+            <div className='w-20 h-1 bg-gray-300'></div>
+            <div className='w-20 h-1 bg-gray-300'></div>
+        </div>
+        <hr className='w-[full] ml-24 mr-24' />
+
+        <div className='flex flex-col mb-10'>
+            <h1 className='text-4xl font-extrabold mt-10 mb-10 pl-24 text-sky-800'>Core Courses Sequence</h1>
+
+            <div className='flex gap-6 pl-24'>
+            <div className='flex flex-col justify-evenly items-center border-slate-200 border-2 rounded-xl'>
+            <Image className='rounded-t-xl w-[250px] h-[200px]'
+            src="/profunda.jpg"
+            alt="first image"
+            height={200}
+            width={200}
+            />
+            <h3 className='text-[20px] mt-2 font-bold '>Programming <br></br> Fundamentals</h3>
+            </div>
+
+            <div className='flex flex-col justify-evenly items-center border-slate-200 border-2 rounded-xl'>
+            <Image className='rounded-t-xl w-[250px] h-[200px] mt-[-15px]'
+            src="/web2.jpg"
+            alt="second image"
+            height={200}
+            width={200}
+            />
+            <h3 className='text-[20px] mt-2 font-bold '>Web 2 Using NextJS</h3>
+            </div>
+
+            <div className='flex flex-col justify-evenly items-center border-slate-200 border-2 rounded-xl'>
+            <Image className='rounded-t-xl w-[250px] h-[200px] mt-[-15px]'
+            src="/earnas.jpg"
+            alt="third image"
+            height={200}
+            width={200}
+            />
+            <h3 className='text-[20px] mt-2 font-bold '>Earn as You Learn</h3>
+            </div>
+            </div>
+        </div>
+
+
+        <div className='flex flex-col h-[720px]'>
+            <h1 className='text-4xl font-extrabold mt-10 mb-10 pl-24 text-sky-800'>Advanced Courses</h1>
+
+            <div className='flex gap-6 pl-24'>
+            <div className='flex flex-col justify-evenly items-center border-slate-200 border-2 rounded-xl'>
+            <Image className='rounded-t-xl w-[250px] h-[200px] mt-[-14px]'
+            src="/courseai.jpg"
+            alt="first image"
+            height={200}
+            width={200}
+            />
+            <h3 className='text-[20px] mt-2 font-bold '>Artificial intelligence</h3>
+            </div>
+
+            <div className='flex flex-col justify-evenly items-center border-slate-200 border-2 rounded-xl'>
+            <Image className='rounded-t-xl w-[250px] h-[200px] mt-[-14px]'
+            src="/courseweb.jpg"
+            alt="second image"
+            height={200}
+            width={200}
+            />
+            <h3 className='text-[20px] mt-2 font-bold '>Web 3 and Metaverse</h3>
+            </div>
+
+            <div className='flex flex-col justify-evenly items-center border-slate-200 border-2 rounded-xl'>
+            <Image className='rounded-t-xl w-[250px] h-[200px] mt-[-14px]'
+            src="/coursecloud.jpg"
+            alt="third image"
+            height={200}
+            width={200}
+            />
+            <h3 className='text-[20px] mt-2 font-bold '>Cloud-Native Computing</h3>
+            </div>
+
+            <div className='flex flex-col justify-evenly items-center border-slate-200 border-2 rounded-xl'>
+            <Image className='rounded-t-xl w-[250px] h-[200px] '
+            src="/courseamb.jpg"
+            alt="third image"
+            height={200}
+            width={200}
+            />
+            <h3 className='text-[20px] mt-2 font-bold text-center'>Ambient Computing and <br /> IoT</h3>
+            </div>
+            </div>
+
+            <div className='flex gap-6 pl-24 mt-10'>
+            <div className='flex flex-col justify-evenly items-center border-slate-200 border-2 rounded-xl'>
+            <Image className='rounded-t-xl w-[250px] h-[200px] '
+            src="/coursegeno.jpg"
+            alt="third image"
+            height={200}
+            width={200}
+            />
+            <h3 className='text-[20px] mt-2 font-bold text-center '>Genomics and <br /> Bioinformatics</h3>
+            </div>
+
+            <div className='flex flex-col justify-evenly items-center border-slate-200 border-2 rounded-xl'>
+            <Image className='rounded-t-xl w-[250px] h-[200px] '
+            src="/coursenetwork.jpg"
+            alt="third image"
+            height={200}
+            width={200}
+            />
+            <h3 className='text-[20px] mt-2 font-bold text-center'>Network Programability <br /> and Automation</h3>
+            </div>
+            </div>
+        </div>
+
     </div>
-  );
+  )
 }
+
+export default page

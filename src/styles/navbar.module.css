@@ -1,0 +1,48 @@
+.navbar{
+    position: fixed;
+    width:100%;
+    height: 80px;
+    background-color: rgb(7, 82, 136);
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.navitems{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: auto;
+    width: 80%;
+    margin-left: 200px;
+    padding-right: 50px;
+
+}
+.navbar p{
+    width: 55%;
+    color: rgb(191, 225, 239);
+    font-size: larger;
+    font-weight: bold;
+
+}
+.menus{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 40%;
+    height: auto;
+    cursor: pointer;
+
+}
+.menus p{
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+
+}
+.coursearrow{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 13px;
+}
